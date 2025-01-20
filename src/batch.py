@@ -35,7 +35,7 @@ result = evaluate(
     data="data.jsonl",
     evaluators={
         "groundedness": groundedness_eval,
-         "relevance": relevance_eval,
+        "relevance": relevance_eval,
         "coherence": coherence_eval,
         "fluency": fluency_eval,
         "retrieval": retrieval_eval,
