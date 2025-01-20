@@ -1,0 +1,22 @@
+{
+    "name": "Python Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/python:dev-3.11",
+    "features": {
+      "ghcr.io/devcontainers-extra/features/poetry:2": {}
+    },
+    "postStartCommand": "poetry install",
+    "runArgs": ["--network=host"],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "ms-python.python",
+          "ms-python.black-formatter",
+          "ms-python.flake8",
+          "ms-python.vscode-pylance",
+          "ms-python.debugpy",
+          "donjayamanne.python-environment-manager",
+          "kevinrose.vsc-python-indent"
+        ]
+      }
+    }
+  }
