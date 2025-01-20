@@ -2,14 +2,11 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger",
+            "name": "Python: Current File",
             "type": "debugpy",
             "request": "launch",
-            "program": "src/main.py",
-            "console": "integratedTerminal",
-            "args": [
-                ""
-            ]
+            "program": "${file}",
+            "console": "integratedTerminal"
         }
     ]
 }
